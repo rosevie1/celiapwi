@@ -1,0 +1,89 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(223, 95, 155),
+    rgb(235, 224, 224),
+    rgb(250, 127, 26)
+  );
+}
+
+.menu{
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu ul li {
+  margin: auto;
+  width: 290px;
+  height: auto;
+  background-color: #cf6983;
+  color: white;
+  /*width: 200px;
+    height: 40px;*/
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover {
+  background-color: #e78268;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  color: rgb(119, 46, 78);
+  font-style: italic;
+  text-align: center;
+}
+
+.foto img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(119, 46, 78);
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: rgb(119, 46, 78);
+  text-align: justify;
+  margin: 20px;
+  padding: 60px;
+}
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  color: rgb(119, 46, 78);
+  text-align: justify;
+  margin: 20px;
+  padding: 60px;
+}
+
+/*.ok hr {
+	color:rgb(90, 175, 111);
+}*/

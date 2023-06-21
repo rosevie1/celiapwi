@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Entre em contato</title>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpg" href="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script language="javascript" type="text/javascript">
+    function validar() {
+      var name = formsafo.name.value;
+      var num = formsafo.num.value;
+      var email = formsafo.email.value;
+
+      if (name == "") {
+        alert('Insira seu nome!');
+        formsafo.name.focus();
+        return false;
+      }
+      else if (name.length < 3) {
+        alert('Insira seu nome completo!');
+        formsafo.name.focus();
+        return false;
+      }
+      else if (num == "") {
+        alert('Insira seu número de telefone!');
+        formsafo.num.focus();
+        return false;
+      }
+      else if (num.length < 11) {
+        alert('Insira se número de telefone completo!');
+        formsafo.num.focus();
+        return false;
+      }
+      else if (email == "") {
+        alert('Insira seu email!');
+        formsafo.email.focus();
+        return false;
+      }
+      else if (email.length < 8) {
+        alert('Insira seu email');
+        formsafo.email.focus();
+        return false;
+      }
+      else {
+        alert("Recebemos sua mensagem !! :D");
+        return false;
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <br>
+  <div class="menu">
+    <ul>
+      <a href="index.html">
+        <li>Home</li>
+      </a>
+      <a href="origem.html">
+        <li>Origem</li>
+      </a>
+      <a href="obras.html">
+        <li>Obras</li>
+      </a>
+      <a href="galeria.html">
+        <li>Galeria</li>
+      </a>
+      <a href="contato.html">
+        <li>Contato</li>
+      </a>
+    </ul>
+  </div>
+  <h2>
+    <form name="formsafo" action="contato2.html" method="post">
+      Nome: <input type="text" name="name"> <br> <br>
+      Telefone: <input type="text" name="num"> <br> <br>
+      Email: <input type="text" name="email"> <br> <br>
+      Qual poema de Safo é seu favorito?:
+      <br>
+      <select name="genero">
+        <option></option>
+        <option>Ode a Afrodite</option>
+        <option>Fragmento 31</option>
+        <option>Ode à Anactória</option>
+        <option>A uma mulher amada</option>
+        <option>A Átis</option>
+      </select>
+      <br> <br>
+      Deixe sua mensagem:
+      <br>
+      <textarea style="resize: none" cols="20" rows="10"></textarea>
+      <br><br>
+      <input type="submit" onclick="return validar()" value="Enviar">
+      <input type="reset" name="limpa" value="Limpar">
+  </h2>
+  <br>
+  <div img align="right">
+    <a href="#">
+      <img src="foto/seta.png" width="3%" />
+    </a>
+  </div>
+  <hr>
+  <br>
+  <h5>TRABALHO ACADÊMICO - SEM FINS LUCRATIVOS / Livia Ranite 2023 - &copyTodos os direitos reservados</h5>
+</body>
+
+</html>
